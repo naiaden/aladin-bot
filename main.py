@@ -68,8 +68,16 @@ class LogOutput(Output):
 class TelegramOutput(Output):
     pass
 
+
+class PostRoloTelegramOutput(TelegramOutput):
+    def run(self, string):
+        print(f"<PostRoloTelegramOutput> {string}: ROLOOOOOOOOOOOO")
+
+
 class ActionOutput(Output):
     pass
+
+
 
 
 
@@ -121,9 +129,15 @@ class Bot:
         return ["list", "version", "whoami"]
 
     
-class Cloud:
+class CloudManager:
     pass
-    
+
+class TelegramManager:
+    pass    
+
+class StateManager:
+    def __init__(self):
+        self.airflow_mutes = {}
 
 # The processor connects Input to Output
 class Processor:
