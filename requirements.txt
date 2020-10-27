@@ -9,7 +9,7 @@ chardet==3.0.4
 Click==7.0
 clin28tools==0.1.6
 colibricore==2.4.5
-cryptography==2.5
+cryptography==3.2
 decorator==4.3.2
 dynaconf==1.2.0
 httplib2==0.10.3
